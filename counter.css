@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent{
+    background-color: rgb(128, 122, 124);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent.counter{
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.parent.counter #counter-value{
+    font-size: 20px;
+}
+.parent.counter.btns button{
+    padding:7px 10px;
+    color: white;
+    cursor: pointer;
+}
+h1{
+    color: white;
+    text-align: center;
+}
