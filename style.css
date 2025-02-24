@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav{
+    background-color:rgb(149, 147, 204);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    
+
+
+}
+.nav .links ul{
+    width:400px;
+    list-style:none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+
+}
+.nav .links ul li a{
+    text-decoration: none;
+    color: rgba(44, 10, 10, 0.791);
+}
+.hero{
+    
+    height: 100vh;
+    background-image: url("https://www.vidyavision.com/CollegeUploads/Photos/2019-21-8-17-00-59_guru%20nanak.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.hero h1{
+    padding-left: 400px;
+    padding-top: 50px;
+    color:orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+ .bn{
+    height: 40px; 
+    width: 70px;
+    padding: 5px 10px;
+    margin:0px 20px 0px 0px;
+    text-decoration: none;
+
+}
+.oef{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+.oef .faculty-cards{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.oef .faculty-cards .f-card{
+    width:280px;
+    border-radius: 10px;
+    border:1px solid gray;
+    padding: 15px 10px;
+    text-align : center;
+    gap:10px;
+    cursor: pointer;
+
+}
+.oef .faculty-cards .f-card .img{
+    border-radius: 50%;
+    object-fit: contain;
+}
+i{
+    color: gold;
+}
+.sec-title{
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
