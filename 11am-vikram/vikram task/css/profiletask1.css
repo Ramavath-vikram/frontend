@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav.header{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(70, 105, 105);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.header div.logo-section div.logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-image: url(../asserts/IMG_3516.JPG);
+    background-size: cover;
+    padding: 0px 4px 5px 0px;
+}
+nav.header div.links-section ul.links {
+    width: 650px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    
+}
+nav.header div.links-section ul.links li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 25px solid rgb(15, 1, 1);
+}
+
+nav.header:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+nav.header div.links-section ul.links li a:hover{
+    font-size: 35px;
+    color: blueviolet;
+}
+div.hero-section{
+    height: 150vh;
+    padding: 5px;
+    margin: 5px;
+    background-image: url(../asserts/IMG_3505.JPG);
+    background-size: cover;
+}
+div.hero-section div.aboutme h1.h1-about{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 244, 27);
+    padding: 10px 10px 0px 20px;
+    margin: 20px;
+}
+div.hero-section div.aboutme p.welcome{
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+div.hero-section div.aboutme button.call-me{
+    margin: 10px;
+    padding: 20px;
+    background-color: orangered;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}

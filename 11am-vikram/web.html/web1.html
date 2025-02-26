@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEBSITE</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 30px;;
+
+        }
+        .nav .links ul{
+            list-style:none;
+            display: flex;
+            gap: 50px;
+    
+        }
+        .nav .links ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .hero{
+            background-color:rgb(135, 169, 85);
+            height: 100vh;
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+              <img src="https://www.aceenggacademy.com/wp-content/uploads/2015/08/ACE-LOGO-FOR-WEB.png" alt="" />
+            </div>
+            <div class="links">
+              <ul>
+                <li><i class="fa-solid fa-house"></i><a href="#">HOME</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#">ABOUT US</a></li>
+                <li><i class="fa-solid fa-address-book"></i><a href="#">CONTACT US</a></li>
+                <li><i class="fa-brands fa-product-hunt"></i><a href="#">PRODUCTS</a></li>
+                <li><i class="fa-brands fa-servicestack"></i><a href="#">SERVICES</a></li>
+              </ul>
+            </div>
+            <div class="btns">
+                <button><i class="fa-solid fa-user-plus"></i>SIGNUP</button>
+                <button><i class="fa-solid fa-user"></i>PROFILE</button>
+    
+            </div>
+          </div>
+    </div>
+  </body>
+</html>

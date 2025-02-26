@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch in javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .container{
+            width: 300px;
+            height: 450px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            /* border: 1px solid black; */
+            margin: 20px;
+        }
+        .container .card{
+            width: 300px;
+            height: 450px;
+            
+            /* justify-content: space-between; */
+            gap: 20px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        
+        .container .card img{
+            height: 200px;
+            width: 200px;
+        }
+        .container .card-body .card-title{
+         padding: 10px;
+         font-size: 20px;
+        } 
+        .container .card-body .card-text{
+            padding: 10px;
+            font-size: 15px;
+        }
+        .container .card-body .btn-primary{
+            padding: 7px 20px;
+            background-color: blue;
+            color: #fff;
+            border: 1px solid transparent;
+            text-decoration: none;
+            margin: 40px;
+            margin-top: 50px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="container" id="root">
+        
+    </div>
+
+    <script>
+        let rootElement=document.getElementById("root")
+        fetch("https://fakestoreapi.com/products")
+        .then((Response)=>Response.json())
+        .then((values)=>{
+            let data=""
+            values.map((value)=>{
+                data+=`<div class="card">
+            <img src=${value.image} alt="">
+            <div class="card-body">
+                <h5 class="card-title">
+                    ${value.title.slice(0,51)}
+                </h5>
+                <p class="card-text">${value.description.slice(0,82)}</p>
+                <a href="#" class="btn btn-primary">Go SomeWhere</a>
+            </div>
+        </div>`
+            })
+            rootElement.innerHTML=data
+        })
+    </script>
+</body>
+</html>
